@@ -1,7 +1,9 @@
 1) PROJECT TITLE :
+ 
 PERSONAL PORTFOLIO WEBSITE DEVELOPMENT
 
 2) Project Overview:
+   
 Purpose: The website serves as a digital resume and portfolio, designed to impress potential employers and collaborators.
 
 3) Customization Details:
