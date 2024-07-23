@@ -1,0 +1,406 @@
+:root {
+  --pink: #e84393;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+section {
+  padding: 2rem 9%;
+}
+.heading span{
+  color: var(--pink);
+}
+.heading{
+   text-align: center;
+   font-size: 4rem;
+   padding: 1rem;
+   margin: 2rem 0;
+}
+.content span{
+  color: var(--pink);
+}
+.color-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+.theme-toggle button {
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Ensure each button has the correct background color */
+.color-btn[data-color="#e84393"] {
+  background: #e84393; /* Pink */
+}
+.color-btn[data-color="#3498db"] {
+  background: #3498db; /* Blue */
+}
+.color-btn[data-color="#2ecc71"] {
+  background: #2ecc71; /* Green */
+}
+.color-btn[data-color="#f39c12"] {
+  background: #f39c12; /* Yellow */
+}
+.theme-colors {
+  display: flex;
+  margin-left: 10px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: 1rem 3.5rem; /* Adjust padding to make the buttons smaller */
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover{
+  background: var(--pink);
+  color: #fff; /* Ensure text remains white on hover */
+}
+.download-btn {
+  background: #333; /* Adjust background color */
+  color: #fff; /* Adjust text color */
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  z-index: 1000;
+}
+header .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #333;
+}
+header .logo span {
+  font-size: 2.5rem;
+  color: var(--pink);
+}
+header .navbar a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: #333;
+}
+header .navbar a:hover {
+  color: var(--pink);
+}
+header .icons a:hover{
+  color: var(--pink);
+}
+header #toggler{
+     display:none;
+}
+header .fa-bars{
+ font-size: 3rem;
+ color:#333;
+ border-radius: .5rem;
+ padding:.5rem 1.5rem;
+ cursor: pointer;
+ border: .1rem solid rgba(0,0,0,.3);
+}
+.github-logo img {
+  width: 30px;
+  height: 30px;
+}
+.home{
+  display:flex;
+  align-items: center;
+  min-height: 100vh;
+  background:url(https://img.freepik.com/premium-photo/from-overhead-perspective-there-is-pink-table-adorned-with-gold-tropical-leaves-where-spa-beau_908985-13404.jpg);
+   background-size: cover;
+  background-position: center;
+
+}
+#services {
+  margin-top: 2rem; /* Space between skills and boxes */
+}
+#services .service-item {
+  flex: 1 1 calc(50% - 1.5rem); /* 50% width with gap consideration */
+  max-width: 500px; /* Max width to ensure boxes don't stretch too much */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  #services .row {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
+#services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+#services .heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--pink);
+}
+#services .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between boxes */
+  justify-content: center; /* Center align boxes */
+}
+#services .service-item:hover {
+  background: var(--pink);
+  color: #fff;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+}
+#services .service-item h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#services .service-item p {
+  font-size: 1.4rem;
+  color: #333;
+}
+.education {
+  padding: 2rem 9%;
+}
+.education-box {
+  border: 1px solid #ddd; /* Light gray border similar to project boxes */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px; /* Optional: add rounded corners */
+  transition: background 0.3s ease, border-color 0.3s ease; /* Add transition for border color */
+}
+.education-box:hover {
+  background: var(--pink); /* Match the hover effect */
+  color: #fff; /* Text color on hover */
+  border-color: var(--pink); /* Change border color on hover */
+}
+.education .education-box {
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+.education .education-box:hover {
+  background: var(--pink);
+  color: #fff;
+}
+.education .education-box h3 {
+  font-size: 2.5rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+.education .education-details {
+  display: none;
+}
+.education .education-box:hover .education-details {
+  display: block;
+}
+.education .education-details p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+.projects .project-box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.projects .project-box {
+  flex: 1 1 30%;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+.projects .project-box:hover {
+  background: var(--pink);
+  color: #fff;
+}
+.projects .project-box h3 {
+  font-size: 2rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+.projects .project-details {
+  display: none;
+}
+.projects .project-box:hover .project-details {
+  display: block;
+}
+.projects .project-details p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+/* Contact */
+.contact {
+  background: #f9f9f9;
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.contact form {
+  flex: 1 1 42rem;
+  padding: 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  border: .1rem solid rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  background: #fff;
+}
+.contact form .box {
+  width: 100%;
+  border-radius: .5rem;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #333;
+  background: #f9f9f9;
+  margin: 1rem 0;
+  border: .1rem solid rgba(0, 0, 0, .1);
+}
+.contact form .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  background: var(--pink);
+}
+.contact form .btn:hover {
+  background: #333;
+}
+/* Contact form input hover effect */
+.contact form .box:focus {
+  border-color: var(--pink); /* Change border color on focus */
+  background: #fff; /* Ensure background stays white */
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); /* Light shadow on focus */
+}
+/* Footer adjustments */
+.footer {
+  background: #333;
+  padding: 2rem 9%;
+  color: #fff;
+  position: relative;
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer .box {
+  flex: 1 1 30rem;
+  background: #444; /* Slightly lighter background for boxes */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #555; /* Light border for better distinction */
+}
+.footer .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 1rem; /* Adjust padding for consistency */
+}
+.footer .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+.footer .box a:hover {
+  color: var(--pink);
+  padding-left: 1rem;
+}
+.footer .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+.footer .credit {
+  text-align: center;
+  padding: 2rem; /* Space above credit section */
+  font-size: 1.7rem;
+  color: #fff;
+}
+.footer .credit span {
+  color: var(--pink);
+}
+.footer .btn {
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  background: var(--pink);
+  text-align: center;
+}
+.footer .btn:hover {
+  background: #fff;
+}
+.footer .credit h3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  margin: 2rem 0; /* Adjust margin to create space */
+}
+.about ul {
+  margin: 1rem 0; /* Adjust this value to reduce space */
+  padding: 0;
+}
+#services .container {
+  margin-top: 1rem; /* Adjust this value to reduce space */
+}
+
+#about .container{
+
+    flex: 0 0 auto; /* Ensure the image does not grow */
+    margin-top: -100px;
+}
+#about .container .service-item{
+  border: 1px solid #b4b1b1;
+}
