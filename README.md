@@ -12,17 +12,17 @@ Design: Customized layout, color scheme, and typography to align with personal b
 
 Content: Tailored content to effectively communicate skills, projects, and background.
 
-Modeling:
+4) Modeling:
 
 Responsive Design: Ensured the website is responsive, adapting to different screen sizes and devices.
 
 Interactive Elements: Implemented JavaScript for interactive features such as smooth scrolling, form validation, and dynamic content.
 
-End Users:
+5) End Users:
 
 Primary Users: Potential employers, recruiters, and collaborators interested in the individual's skills and portfolio.
 
-Results:
+6) Results:
 
 Successfully launched a fully functional personal portfolio website meeting project objectives.
 
