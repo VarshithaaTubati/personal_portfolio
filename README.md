@@ -5,7 +5,7 @@ PERSONAL PORTFOLIO WEBSITE DEVELOPMENT
 Purpose: The website serves as a digital resume and portfolio, designed to impress potential employers and collaborators.
 
 3) Customization Details:
-4) 
+   
 Design: Customized layout, color scheme, and typography to align with personal branding.
 
 Content: Tailored content to effectively communicate skills, projects, and background.
